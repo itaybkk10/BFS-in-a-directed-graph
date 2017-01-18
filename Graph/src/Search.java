@@ -5,7 +5,8 @@ import java.util.LinkedList;
 public class Search {
 
 	//Variables
-	private static String START = "chalk";
+	private static String fileName = "words.txt";
+	private static String START = "newspaper";
 	private static String END = "";
 	private static Double totalPercent;
 	private static boolean FLAG = false;
@@ -14,7 +15,7 @@ public class Search {
 	public static void main(String[] args) {
 		// this graph is directional
 		Graph graph = new Graph();
-		readFile(graph, "words.txt");
+		readFile(graph, fileName);
 
 		int loop = 0;
 		// looping through the graph to every termination node.
